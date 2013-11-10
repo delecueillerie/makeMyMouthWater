@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		093A0D6718304D1C00093ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6618304D1C00093ABD /* Foundation.framework */; };
+		093A0D6918304D1C00093ABD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6818304D1C00093ABD /* CoreGraphics.framework */; };
+		093A0D6B18304D1C00093ABD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6A18304D1C00093ABD /* UIKit.framework */; };
+		093A0D7118304D1C00093ABD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093A0D6F18304D1C00093ABD /* InfoPlist.strings */; };
+		093A0D7318304D1C00093ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0D7218304D1C00093ABD /* main.m */; };
+		093A0D7718304D1C00093ABD /* MAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0D7618304D1C00093ABD /* MAAppDelegate.m */; };
+		093A0D7A18304D1C00093ABD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093A0D7818304D1C00093ABD /* Main_iPhone.storyboard */; };
+		093A0D7D18304D1C00093ABD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093A0D7B18304D1C00093ABD /* Main_iPad.storyboard */; };
+		093A0D8018304D1C00093ABD /* MAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0D7F18304D1C00093ABD /* MAViewController.m */; };
+		093A0D8218304D1C00093ABD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093A0D8118304D1C00093ABD /* Images.xcassets */; };
+		093A0D8918304D1C00093ABD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D8818304D1C00093ABD /* XCTest.framework */; };
+		093A0D8A18304D1C00093ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6618304D1C00093ABD /* Foundation.framework */; };
+		093A0D8B18304D1C00093ABD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6A18304D1C00093ABD /* UIKit.framework */; };
+		093A0D9318304D1C00093ABD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093A0D9118304D1C00093ABD /* InfoPlist.strings */; };
+		093A0D9518304D1C00093ABD /* makeMyMouthWaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0D9418304D1C00093ABD /* makeMyMouthWaterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		093A0D8C18304D1C00093ABD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 093A0D5B18304D1C00093ABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 093A0D6218304D1C00093ABD;
+			remoteInfo = makeMyMouthWater;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		093A0D6318304D1C00093ABD /* makeMyMouthWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makeMyMouthWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		093A0D6618304D1C00093ABD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		093A0D6818304D1C00093ABD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		093A0D6A18304D1C00093ABD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		093A0D6E18304D1C00093ABD /* makeMyMouthWater-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "makeMyMouthWater-Info.plist"; sourceTree = "<group>"; };
+		093A0D7018304D1C00093ABD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		093A0D7218304D1C00093ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		093A0D7418304D1C00093ABD /* makeMyMouthWater-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "makeMyMouthWater-Prefix.pch"; sourceTree = "<group>"; };
+		093A0D7518304D1C00093ABD /* MAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAAppDelegate.h; sourceTree = "<group>"; };
+		093A0D7618304D1C00093ABD /* MAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAAppDelegate.m; sourceTree = "<group>"; };
+		093A0D7918304D1C00093ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		093A0D7C18304D1C00093ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		093A0D7E18304D1C00093ABD /* MAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAViewController.h; sourceTree = "<group>"; };
+		093A0D7F18304D1C00093ABD /* MAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAViewController.m; sourceTree = "<group>"; };
+		093A0D8118304D1C00093ABD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		093A0D8718304D1C00093ABD /* makeMyMouthWaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = makeMyMouthWaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		093A0D8818304D1C00093ABD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		093A0D9018304D1C00093ABD /* makeMyMouthWaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "makeMyMouthWaterTests-Info.plist"; sourceTree = "<group>"; };
+		093A0D9218304D1C00093ABD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		093A0D9418304D1C00093ABD /* makeMyMouthWaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = makeMyMouthWaterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		093A0D6018304D1C00093ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A0D6918304D1C00093ABD /* CoreGraphics.framework in Frameworks */,
+				093A0D6B18304D1C00093ABD /* UIKit.framework in Frameworks */,
+				093A0D6718304D1C00093ABD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093A0D8418304D1C00093ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A0D8918304D1C00093ABD /* XCTest.framework in Frameworks */,
+				093A0D8B18304D1C00093ABD /* UIKit.framework in Frameworks */,
+				093A0D8A18304D1C00093ABD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		093A0D5A18304D1C00093ABD = {
+			isa = PBXGroup;
+			children = (
+				093A0D6C18304D1C00093ABD /* makeMyMouthWater */,
+				093A0D8E18304D1C00093ABD /* makeMyMouthWaterTests */,
+				093A0D6518304D1C00093ABD /* Frameworks */,
+				093A0D6418304D1C00093ABD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		093A0D6418304D1C00093ABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				093A0D6318304D1C00093ABD /* makeMyMouthWater.app */,
+				093A0D8718304D1C00093ABD /* makeMyMouthWaterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		093A0D6518304D1C00093ABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				093A0D6618304D1C00093ABD /* Foundation.framework */,
+				093A0D6818304D1C00093ABD /* CoreGraphics.framework */,
+				093A0D6A18304D1C00093ABD /* UIKit.framework */,
+				093A0D8818304D1C00093ABD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		093A0D6C18304D1C00093ABD /* makeMyMouthWater */ = {
+			isa = PBXGroup;
+			children = (
+				093A0D7518304D1C00093ABD /* MAAppDelegate.h */,
+				093A0D7618304D1C00093ABD /* MAAppDelegate.m */,
+				093A0D7818304D1C00093ABD /* Main_iPhone.storyboard */,
+				093A0D7B18304D1C00093ABD /* Main_iPad.storyboard */,
+				093A0D7E18304D1C00093ABD /* MAViewController.h */,
+				093A0D7F18304D1C00093ABD /* MAViewController.m */,
+				093A0D8118304D1C00093ABD /* Images.xcassets */,
+				093A0D6D18304D1C00093ABD /* Supporting Files */,
+			);
+			path = makeMyMouthWater;
+			sourceTree = "<group>";
+		};
+		093A0D6D18304D1C00093ABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				093A0D6E18304D1C00093ABD /* makeMyMouthWater-Info.plist */,
+				093A0D6F18304D1C00093ABD /* InfoPlist.strings */,
+				093A0D7218304D1C00093ABD /* main.m */,
+				093A0D7418304D1C00093ABD /* makeMyMouthWater-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		093A0D8E18304D1C00093ABD /* makeMyMouthWaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				093A0D9418304D1C00093ABD /* makeMyMouthWaterTests.m */,
+				093A0D8F18304D1C00093ABD /* Supporting Files */,
+			);
+			path = makeMyMouthWaterTests;
+			sourceTree = "<group>";
+		};
+		093A0D8F18304D1C00093ABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				093A0D9018304D1C00093ABD /* makeMyMouthWaterTests-Info.plist */,
+				093A0D9118304D1C00093ABD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		093A0D6218304D1C00093ABD /* makeMyMouthWater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093A0D9818304D1C00093ABD /* Build configuration list for PBXNativeTarget "makeMyMouthWater" */;
+			buildPhases = (
+				093A0D5F18304D1C00093ABD /* Sources */,
+				093A0D6018304D1C00093ABD /* Frameworks */,
+				093A0D6118304D1C00093ABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = makeMyMouthWater;
+			productName = makeMyMouthWater;
+			productReference = 093A0D6318304D1C00093ABD /* makeMyMouthWater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		093A0D8618304D1C00093ABD /* makeMyMouthWaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093A0D9B18304D1C00093ABD /* Build configuration list for PBXNativeTarget "makeMyMouthWaterTests" */;
+			buildPhases = (
+				093A0D8318304D1C00093ABD /* Sources */,
+				093A0D8418304D1C00093ABD /* Frameworks */,
+				093A0D8518304D1C00093ABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				093A0D8D18304D1C00093ABD /* PBXTargetDependency */,
+			);
+			name = makeMyMouthWaterTests;
+			productName = makeMyMouthWaterTests;
+			productReference = 093A0D8718304D1C00093ABD /* makeMyMouthWaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		093A0D5B18304D1C00093ABD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Olivier Delecueillerie";
+				TargetAttributes = {
+					093A0D8618304D1C00093ABD = {
+						TestTargetID = 093A0D6218304D1C00093ABD;
+					};
+				};
+			};
+			buildConfigurationList = 093A0D5E18304D1C00093ABD /* Build configuration list for PBXProject "makeMyMouthWater" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 093A0D5A18304D1C00093ABD;
+			productRefGroup = 093A0D6418304D1C00093ABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				093A0D6218304D1C00093ABD /* makeMyMouthWater */,
+				093A0D8618304D1C00093ABD /* makeMyMouthWaterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		093A0D6118304D1C00093ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A0D7D18304D1C00093ABD /* Main_iPad.storyboard in Resources */,
+				093A0D8218304D1C00093ABD /* Images.xcassets in Resources */,
+				093A0D7A18304D1C00093ABD /* Main_iPhone.storyboard in Resources */,
+				093A0D7118304D1C00093ABD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093A0D8518304D1C00093ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A0D9318304D1C00093ABD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		093A0D5F18304D1C00093ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A0D7718304D1C00093ABD /* MAAppDelegate.m in Sources */,
+				093A0D8018304D1C00093ABD /* MAViewController.m in Sources */,
+				093A0D7318304D1C00093ABD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093A0D8318304D1C00093ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093A0D9518304D1C00093ABD /* makeMyMouthWaterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		093A0D8D18304D1C00093ABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 093A0D6218304D1C00093ABD /* makeMyMouthWater */;
+			targetProxy = 093A0D8C18304D1C00093ABD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		093A0D6F18304D1C00093ABD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093A0D7018304D1C00093ABD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		093A0D7818304D1C00093ABD /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093A0D7918304D1C00093ABD /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		093A0D7B18304D1C00093ABD /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093A0D7C18304D1C00093ABD /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		093A0D9118304D1C00093ABD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093A0D9218304D1C00093ABD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		093A0D9618304D1C00093ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		093A0D9718304D1C00093ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		093A0D9918304D1C00093ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "makeMyMouthWater/makeMyMouthWater-Prefix.pch";
+				INFOPLIST_FILE = "makeMyMouthWater/makeMyMouthWater-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		093A0D9A18304D1C00093ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "makeMyMouthWater/makeMyMouthWater-Prefix.pch";
+				INFOPLIST_FILE = "makeMyMouthWater/makeMyMouthWater-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		093A0D9C18304D1C00093ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/makeMyMouthWater.app/makeMyMouthWater";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "makeMyMouthWater/makeMyMouthWater-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "makeMyMouthWaterTests/makeMyMouthWaterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		093A0D9D18304D1C00093ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/makeMyMouthWater.app/makeMyMouthWater";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "makeMyMouthWater/makeMyMouthWater-Prefix.pch";
+				INFOPLIST_FILE = "makeMyMouthWaterTests/makeMyMouthWaterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		093A0D5E18304D1C00093ABD /* Build configuration list for PBXProject "makeMyMouthWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093A0D9618304D1C00093ABD /* Debug */,
+				093A0D9718304D1C00093ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		093A0D9818304D1C00093ABD /* Build configuration list for PBXNativeTarget "makeMyMouthWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093A0D9918304D1C00093ABD /* Debug */,
+				093A0D9A18304D1C00093ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		093A0D9B18304D1C00093ABD /* Build configuration list for PBXNativeTarget "makeMyMouthWaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093A0D9C18304D1C00093ABD /* Debug */,
+				093A0D9D18304D1C00093ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 093A0D5B18304D1C00093ABD /* Project object */;
+}
