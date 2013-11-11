@@ -7,12 +7,24 @@
 //
 
 #import "MAAppDelegate.h"
+#import "ODViewController.h"
+#import <Parse/Parse.h>
+
+@interface MAAppDelegate()
+@property (strong, nonatomic) ODViewController *viewController;
+@end
 
 @implementation MAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //loginParse app
+    [Parse setApplicationId:@"C2XRFUHGSMgrAK1Cd3qa1DQkgDiqR4f0T2bMlu5l"
+                  clientKey:@"j5niQANFTgraWoRj1GMXsyOHpXehcZgFSMOUoxbP"];
+    
+    //introTuto app
+    [self introTutoInit];
     return YES;
 }
 							
@@ -43,4 +55,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+////////////////////////////////////////////////////////////////
+//introTuto app
+////////////////////////////////////////////////////////////////
+
+- (void) introTutoInit {
+// Override point for customization after application launch.
+self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+self.viewController = [[ODViewController alloc] initWithNibName:@"ODViewController" bundle:nil];
+self.window.rootViewController = self.viewController;
+[self.window makeKeyAndVisible];
+}
 @end

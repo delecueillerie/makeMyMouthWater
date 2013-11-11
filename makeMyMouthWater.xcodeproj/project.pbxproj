@@ -22,6 +22,26 @@
 		093A0D8B18304D1C00093ABD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6A18304D1C00093ABD /* UIKit.framework */; };
 		093A0D9318304D1C00093ABD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093A0D9118304D1C00093ABD /* InfoPlist.strings */; };
 		093A0D9518304D1C00093ABD /* makeMyMouthWaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0D9418304D1C00093ABD /* makeMyMouthWaterTests.m */; };
+		093A0DA918304DAC00093ABD /* ODChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0DA318304DAC00093ABD /* ODChildVC.m */; };
+		093A0DAA18304DAC00093ABD /* ODChildView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093A0DA418304DAC00093ABD /* ODChildView.xib */; };
+		093A0DAB18304DAC00093ABD /* ODViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0DA618304DAC00093ABD /* ODViewController.m */; };
+		093A0DAC18304DAC00093ABD /* ODViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093A0DA718304DAC00093ABD /* ODViewController.xib */; };
+		093A0DB118304E0B00093ABD /* bar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 093A0DAD18304E0B00093ABD /* bar.jpg */; };
+		093A0DB218304E0B00093ABD /* bouteille.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 093A0DAE18304E0B00093ABD /* bouteille.jpg */; };
+		093A0DB318304E0B00093ABD /* cuisine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 093A0DAF18304E0B00093ABD /* cuisine.jpg */; };
+		093A0DB418304E0B00093ABD /* table.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 093A0DB018304E0B00093ABD /* table.jpg */; };
+		093A0DBE18304EA000093ABD /* LOLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0DBA18304EA000093ABD /* LOLoginVC.m */; };
+		093A0DBF18304EA000093ABD /* LORegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A0DBC18304EA000093ABD /* LORegisterVC.m */; };
+		093A0DC118304EE800093ABD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DC018304EE800093ABD /* Parse.framework */; };
+		093A0DC318304F5500093ABD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DC218304F5500093ABD /* AudioToolbox.framework */; };
+		093A0DC518304F5C00093ABD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DC418304F5C00093ABD /* CFNetwork.framework */; };
+		093A0DC718304F6D00093ABD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DC618304F6D00093ABD /* CoreLocation.framework */; };
+		093A0DC918304F7600093ABD /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DC818304F7600093ABD /* libz.1.1.3.dylib */; };
+		093A0DCB18304F7F00093ABD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DCA18304F7F00093ABD /* MobileCoreServices.framework */; };
+		093A0DCD18304F8800093ABD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DCC18304F8800093ABD /* QuartzCore.framework */; };
+		093A0DCF18304F9500093ABD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DCE18304F9500093ABD /* Security.framework */; };
+		093A0DD118304F9C00093ABD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DD018304F9C00093ABD /* StoreKit.framework */; };
+		093A0DD318304FA700093ABD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0DD218304FA700093ABD /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +75,30 @@
 		093A0D9018304D1C00093ABD /* makeMyMouthWaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "makeMyMouthWaterTests-Info.plist"; sourceTree = "<group>"; };
 		093A0D9218304D1C00093ABD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		093A0D9418304D1C00093ABD /* makeMyMouthWaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = makeMyMouthWaterTests.m; sourceTree = "<group>"; };
+		093A0DA218304DAC00093ABD /* ODChildVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODChildVC.h; sourceTree = "<group>"; };
+		093A0DA318304DAC00093ABD /* ODChildVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODChildVC.m; sourceTree = "<group>"; };
+		093A0DA418304DAC00093ABD /* ODChildView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODChildView.xib; sourceTree = "<group>"; };
+		093A0DA518304DAC00093ABD /* ODViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODViewController.h; sourceTree = "<group>"; };
+		093A0DA618304DAC00093ABD /* ODViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODViewController.m; sourceTree = "<group>"; };
+		093A0DA718304DAC00093ABD /* ODViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODViewController.xib; sourceTree = "<group>"; };
+		093A0DAD18304E0B00093ABD /* bar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar.jpg; sourceTree = "<group>"; };
+		093A0DAE18304E0B00093ABD /* bouteille.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bouteille.jpg; sourceTree = "<group>"; };
+		093A0DAF18304E0B00093ABD /* cuisine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cuisine.jpg; sourceTree = "<group>"; };
+		093A0DB018304E0B00093ABD /* table.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = table.jpg; sourceTree = "<group>"; };
+		093A0DB918304EA000093ABD /* LOLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLoginVC.h; sourceTree = "<group>"; };
+		093A0DBA18304EA000093ABD /* LOLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLoginVC.m; sourceTree = "<group>"; };
+		093A0DBB18304EA000093ABD /* LORegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LORegisterVC.h; sourceTree = "<group>"; };
+		093A0DBC18304EA000093ABD /* LORegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LORegisterVC.m; sourceTree = "<group>"; };
+		093A0DC018304EE800093ABD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		093A0DC218304F5500093ABD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		093A0DC418304F5C00093ABD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		093A0DC618304F6D00093ABD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		093A0DC818304F7600093ABD /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		093A0DCA18304F7F00093ABD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		093A0DCC18304F8800093ABD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		093A0DCE18304F9500093ABD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		093A0DD018304F9C00093ABD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		093A0DD218304FA700093ABD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +106,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093A0DD318304FA700093ABD /* SystemConfiguration.framework in Frameworks */,
+				093A0DD118304F9C00093ABD /* StoreKit.framework in Frameworks */,
+				093A0DCF18304F9500093ABD /* Security.framework in Frameworks */,
+				093A0DCD18304F8800093ABD /* QuartzCore.framework in Frameworks */,
+				093A0DCB18304F7F00093ABD /* MobileCoreServices.framework in Frameworks */,
+				093A0DC918304F7600093ABD /* libz.1.1.3.dylib in Frameworks */,
+				093A0DC718304F6D00093ABD /* CoreLocation.framework in Frameworks */,
 				093A0D6918304D1C00093ABD /* CoreGraphics.framework in Frameworks */,
+				093A0DC518304F5C00093ABD /* CFNetwork.framework in Frameworks */,
+				093A0DC318304F5500093ABD /* AudioToolbox.framework in Frameworks */,
 				093A0D6B18304D1C00093ABD /* UIKit.framework in Frameworks */,
+				093A0DC118304EE800093ABD /* Parse.framework in Frameworks */,
 				093A0D6718304D1C00093ABD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +157,16 @@
 		093A0D6518304D1C00093ABD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				093A0DD218304FA700093ABD /* SystemConfiguration.framework */,
+				093A0DD018304F9C00093ABD /* StoreKit.framework */,
+				093A0DCE18304F9500093ABD /* Security.framework */,
+				093A0DCC18304F8800093ABD /* QuartzCore.framework */,
+				093A0DCA18304F7F00093ABD /* MobileCoreServices.framework */,
+				093A0DC818304F7600093ABD /* libz.1.1.3.dylib */,
+				093A0DC618304F6D00093ABD /* CoreLocation.framework */,
+				093A0DC418304F5C00093ABD /* CFNetwork.framework */,
+				093A0DC218304F5500093ABD /* AudioToolbox.framework */,
+				093A0DC018304EE800093ABD /* Parse.framework */,
 				093A0D6618304D1C00093ABD /* Foundation.framework */,
 				093A0D6818304D1C00093ABD /* CoreGraphics.framework */,
 				093A0D6A18304D1C00093ABD /* UIKit.framework */,
@@ -114,6 +178,8 @@
 		093A0D6C18304D1C00093ABD /* makeMyMouthWater */ = {
 			isa = PBXGroup;
 			children = (
+				093A0DB618304E8500093ABD /* loginParse */,
+				093A0D9E18304D7800093ABD /* introTuto */,
 				093A0D7518304D1C00093ABD /* MAAppDelegate.h */,
 				093A0D7618304D1C00093ABD /* MAAppDelegate.m */,
 				093A0D7818304D1C00093ABD /* Main_iPhone.storyboard */,
@@ -129,6 +195,7 @@
 		093A0D6D18304D1C00093ABD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				093A0D9F18304D8A00093ABD /* introTuto */,
 				093A0D6E18304D1C00093ABD /* makeMyMouthWater-Info.plist */,
 				093A0D6F18304D1C00093ABD /* InfoPlist.strings */,
 				093A0D7218304D1C00093ABD /* main.m */,
@@ -153,6 +220,41 @@
 				093A0D9118304D1C00093ABD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		093A0D9E18304D7800093ABD /* introTuto */ = {
+			isa = PBXGroup;
+			children = (
+				093A0DA218304DAC00093ABD /* ODChildVC.h */,
+				093A0DA318304DAC00093ABD /* ODChildVC.m */,
+				093A0DA418304DAC00093ABD /* ODChildView.xib */,
+				093A0DA518304DAC00093ABD /* ODViewController.h */,
+				093A0DA618304DAC00093ABD /* ODViewController.m */,
+				093A0DA718304DAC00093ABD /* ODViewController.xib */,
+			);
+			name = introTuto;
+			sourceTree = "<group>";
+		};
+		093A0D9F18304D8A00093ABD /* introTuto */ = {
+			isa = PBXGroup;
+			children = (
+				093A0DAD18304E0B00093ABD /* bar.jpg */,
+				093A0DAE18304E0B00093ABD /* bouteille.jpg */,
+				093A0DAF18304E0B00093ABD /* cuisine.jpg */,
+				093A0DB018304E0B00093ABD /* table.jpg */,
+			);
+			name = introTuto;
+			sourceTree = "<group>";
+		};
+		093A0DB618304E8500093ABD /* loginParse */ = {
+			isa = PBXGroup;
+			children = (
+				093A0DB918304EA000093ABD /* LOLoginVC.h */,
+				093A0DBA18304EA000093ABD /* LOLoginVC.m */,
+				093A0DBB18304EA000093ABD /* LORegisterVC.h */,
+				093A0DBC18304EA000093ABD /* LORegisterVC.m */,
+			);
+			name = loginParse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +334,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093A0DAA18304DAC00093ABD /* ODChildView.xib in Resources */,
+				093A0DB218304E0B00093ABD /* bouteille.jpg in Resources */,
 				093A0D7D18304D1C00093ABD /* Main_iPad.storyboard in Resources */,
 				093A0D8218304D1C00093ABD /* Images.xcassets in Resources */,
+				093A0DB418304E0B00093ABD /* table.jpg in Resources */,
 				093A0D7A18304D1C00093ABD /* Main_iPhone.storyboard in Resources */,
+				093A0DB318304E0B00093ABD /* cuisine.jpg in Resources */,
+				093A0DB118304E0B00093ABD /* bar.jpg in Resources */,
 				093A0D7118304D1C00093ABD /* InfoPlist.strings in Resources */,
+				093A0DAC18304DAC00093ABD /* ODViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +364,11 @@
 			files = (
 				093A0D7718304D1C00093ABD /* MAAppDelegate.m in Sources */,
 				093A0D8018304D1C00093ABD /* MAViewController.m in Sources */,
+				093A0DBF18304EA000093ABD /* LORegisterVC.m in Sources */,
+				093A0DBE18304EA000093ABD /* LOLoginVC.m in Sources */,
 				093A0D7318304D1C00093ABD /* main.m in Sources */,
+				093A0DA918304DAC00093ABD /* ODChildVC.m in Sources */,
+				093A0DAB18304DAC00093ABD /* ODViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +505,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/olivier/Les\\ petits\\ projets\\ d\\ Olivier/Projets/makeMyMouthWater",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "makeMyMouthWater/makeMyMouthWater-Prefix.pch";
 				INFOPLIST_FILE = "makeMyMouthWater/makeMyMouthWater-Info.plist";
@@ -406,6 +522,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/olivier/Les\\ petits\\ projets\\ d\\ Olivier/Projets/makeMyMouthWater",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "makeMyMouthWater/makeMyMouthWater-Prefix.pch";
 				INFOPLIST_FILE = "makeMyMouthWater/makeMyMouthWater-Info.plist";
