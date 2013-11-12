@@ -1,0 +1,42 @@
+
+/* Class = "IBUINavigationItem"; title = "Add Drink"; ObjectID = "3h0-cD-0qx"; */
+"3h0-cD-0qx.title" = "Add Drink";
+
+/* Class = "IBUILabel"; text = "Name"; ObjectID = "Alm-Td-Chu"; */
+"Alm-Td-Chu.text" = "Name";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "FrP-ui-shk"; */
+"FrP-ui-shk.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Name"; ObjectID = "MkI-z1-zKv"; */
+"MkI-z1-zKv.text" = "Name";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "UXs-pj-hg6"; */
+"UXs-pj-hg6.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "X9C-gy-cDM"; */
+"X9C-gy-cDM.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Containing"; ObjectID = "eG7-sf-CJE"; */
+"eG7-sf-CJE.text" = "Containing";
+
+/* Class = "IBUILabel"; text = "Containing"; ObjectID = "fL3-K2-uO9"; */
+"fL3-K2-uO9.text" = "Containing";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "hLZ-O8-6AD"; */
+"hLZ-O8-6AD.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "hcv-Nv-0JT"; */
+"hcv-Nv-0JT.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "lWJ-eG-OxX"; */
+"lWJ-eG-OxX.title" = "Root View Controller";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "lkl-35-21S"; */
+"lkl-35-21S.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Brand"; ObjectID = "rKG-BU-sca"; */
+"rKG-BU-sca.text" = "Brand";
+
+/* Class = "IBUILabel"; text = "Brand"; ObjectID = "svd-x7-51D"; */
+"svd-x7-51D.text" = "Brand";

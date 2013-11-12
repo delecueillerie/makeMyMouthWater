@@ -1,0 +1,33 @@
+
+/* Class = "IBUILabel"; text = "New user?"; ObjectID = "4mM-eI-xk4"; */
+"4mM-eI-xk4.text" = "New user?";
+
+/* Class = "IBUITextField"; placeholder = "User"; ObjectID = "Fsb-3j-8Qt"; */
+"Fsb-3j-8Qt.placeholder" = "User";
+
+/* Class = "IBUIButton"; normalTitle = "Log In"; ObjectID = "Ndp-zU-Mdx"; */
+"Ndp-zU-Mdx.normalTitle" = "Log In";
+
+/* Class = "IBUIButton"; normalTitle = "Sign Up"; ObjectID = "PUE-ch-w23"; */
+"PUE-ch-w23.normalTitle" = "Sign Up";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "dEY-An-9UN"; */
+"dEY-An-9UN.placeholder" = "Password";
+
+/* Class = "IBUINavigationItem"; title = "Sign Up"; ObjectID = "dQJ-P4-bws"; */
+"dQJ-P4-bws.title" = "Sign Up";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "i5F-65-C93"; */
+"i5F-65-C93.placeholder" = "Password";
+
+/* Class = "IBUITextField"; placeholder = "User"; ObjectID = "jRn-DM-OPL"; */
+"jRn-DM-OPL.placeholder" = "User";
+
+/* Class = "IBUINavigationItem"; title = "Log In"; ObjectID = "t5r-Qg-Nc5"; */
+"t5r-Qg-Nc5.title" = "Log In";
+
+/* Class = "IBUIButton"; normalTitle = "Sign Up"; ObjectID = "wi4-uI-oSw"; */
+"wi4-uI-oSw.normalTitle" = "Sign Up";
+
+/* Class = "IBUINavigationItem"; title = "Logged"; ObjectID = "zHO-SW-nwE"; */
+"zHO-SW-nwE.title" = "Logged";

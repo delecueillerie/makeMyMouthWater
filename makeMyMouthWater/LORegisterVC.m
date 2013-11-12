@@ -8,6 +8,8 @@
 
 #import "LORegisterVC.h"
 #import <Parse/Parse.h>
+#import "EDRootVC.h"
+
 @interface LORegisterVC ()
 
 @end
@@ -62,8 +64,8 @@
         if (!error) {
 
             //The registration was succesful, go to the wall
-            [self performSegueWithIdentifier:@"SignupSuccesful" sender:self];
-            
+            //[self performSegueWithIdentifier:@"SignupSuccesful" sender:self];
+            [self openTheNextVC:[[EDRootVC alloc]init] withIPadStoryboard:@"editionTableView_iPad" withIPhoneStoryboard:@"editionTableView_iPhone" inBundle:nil witViewIdentifier:@"root"];
             
         } else {
             //Something bad has ocurred
@@ -76,5 +78,16 @@
     
 }
 
+
+- (void) openTheNextVC:(UIViewController*)VC withIPadStoryboard:(NSString*)ipadStory withIPhoneStoryboard:(NSString*)iphoneStory inBundle:(NSBundle*)bundle witViewIdentifier:(NSString *)id {
+#define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
+    if (IPAD) {
+        VC = [[UIStoryboard storyboardWithName:ipadStory bundle:bundle] instantiateViewControllerWithIdentifier:id];
+    } else {
+        VC = [[UIStoryboard storyboardWithName:iphoneStory bundle:bundle] instantiateViewControllerWithIdentifier:id];
+    }
+    [self presentViewController:VC animated:YES completion:nil];
+    
+}
 
 @end

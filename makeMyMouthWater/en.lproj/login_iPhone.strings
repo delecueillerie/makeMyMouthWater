@@ -1,0 +1,33 @@
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "1he-x0-CI6"; */
+"1he-x0-CI6.placeholder" = "Password";
+
+/* Class = "IBUINavigationItem"; title = "Logged"; ObjectID = "2JW-Le-GUa"; */
+"2JW-Le-GUa.title" = "Logged";
+
+/* Class = "IBUINavigationItem"; title = "Log In"; ObjectID = "57j-l1-bsi"; */
+"57j-l1-bsi.title" = "Log In";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "QNZ-CN-Y85"; */
+"QNZ-CN-Y85.placeholder" = "Password";
+
+/* Class = "IBUIButton"; normalTitle = "Sign Up"; ObjectID = "Qe6-6v-ro6"; */
+"Qe6-6v-ro6.normalTitle" = "Sign Up";
+
+/* Class = "IBUITextField"; placeholder = "User"; ObjectID = "VDL-R2-d0e"; */
+"VDL-R2-d0e.placeholder" = "User";
+
+/* Class = "IBUIButton"; normalTitle = "Log In"; ObjectID = "kw4-Ee-Gws"; */
+"kw4-Ee-Gws.normalTitle" = "Log In";
+
+/* Class = "IBUILabel"; text = "New user?"; ObjectID = "nFb-Bl-uEn"; */
+"nFb-Bl-uEn.text" = "New user?";
+
+/* Class = "IBUIButton"; normalTitle = "Sign Up"; ObjectID = "pvk-JD-89I"; */
+"pvk-JD-89I.normalTitle" = "Sign Up";
+
+/* Class = "IBUITextField"; placeholder = "User"; ObjectID = "sIm-At-kad"; */
+"sIm-At-kad.placeholder" = "User";
+
+/* Class = "IBUINavigationItem"; title = "Sign Up"; ObjectID = "yrN-XJ-Sfe"; */
+"yrN-XJ-Sfe.title" = "Sign Up";
