@@ -26,7 +26,7 @@
         <!--ChildVC-->
         <scene sceneID="pRT-ef-NxJ">
             <objects>
-                <viewController storyboardIdentifier="child" id="qTu-Nd-ezo" customClass="ODChildVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="child" id="qTu-Nd-ezo" customClass="ODChildVC" propertyAccessControl="none" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4dg-qF-uRi"/>
                         <viewControllerLayoutGuide type="bottom" id="Aih-f0-c8J"/>
