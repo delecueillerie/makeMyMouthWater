@@ -30,8 +30,6 @@
 {
     [PFUser logInWithUsernameInBackground:self.userTextField.text password:self.passwordTextField.text block:^(PFUser *user, NSError *error) {
         if (user) {
-            //Open the wall
-            //[self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
             [self openTheNextVC:[[EDRootVC alloc]init] withIPadStoryboard:@"editionTableView_iPad" withIPhoneStoryboard:@"editionTableView_iPhone" inBundle:nil witViewIdentifier:@"root"];
                     } else {
             //Something bad has ocurred

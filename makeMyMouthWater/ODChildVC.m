@@ -7,48 +7,58 @@
 //
 
 #import "ODChildVC.h"
-#import "LORegisterVC.h"
+#import "ODIntroTutoInterfaceController.h"
 
 @interface ODChildVC ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UILabel *labelView;
-@property (strong, nonatomic) IBOutlet UITextView *textView;
 @property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
-
+@property (strong, nonatomic) IBOutlet UITextView *textView;
 @end
 
 @implementation ODChildVC
 
 
-- (void) viewDidAppear:(BOOL)animated {
-    self.imageView.image = self.imageToDisplay;
+- (void) viewWillAppear:(BOOL)animated {
+    self.imageView.image = [self theWellOrientatedImage];
     self.imageView.frame=self.view.frame;
+    [self updatePageControl:self.pageControl];
     self.labelView.text=self.labelToDisplay;
     self.textView.text=self.textToDisplay;
     self.textView.editable=NO;
-    [self updatePageControl:self.pageControl];
+
 }
 
+- (void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    self.imageView.image = [self theWellOrientatedImage];
+}
 
 
 - (void) updatePageControl:(UIPageControl *)pageControl {
     pageControl.numberOfPages = 4;
     pageControl.currentPage = self.index;
-    
 }
 
-- (IBAction)createMenu:(id)sender {
-#define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
-
-    LORegisterVC *registerVC;
-    if (IPAD) {
-    registerVC = [[UIStoryboard storyboardWithName:@"Main_iPad" bundle:NULL] instantiateViewControllerWithIdentifier:@"navLogin"];
+//The background Image must fit the fullscreen bounds, such each time the device orientation change the background image must be updated.
+- (UIImage *) theWellOrientatedImage {
+    UIImage *theWellOrientedOne;
+    if (([UIApplication sharedApplication].statusBarOrientation == UIDeviceOrientationPortrait ) ||
+        ([UIApplication sharedApplication].statusBarOrientation == UIDeviceOrientationPortraitUpsideDown)) {
+        theWellOrientedOne = self.portraitImage;
     } else {
-    registerVC = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:NULL] instantiateViewControllerWithIdentifier:@"navLogin"];
+        theWellOrientedOne = self.landscapeImage;
     }
-    [self presentViewController:registerVC animated:YES completion:nil];
-    
-    
+    return theWellOrientedOne;
 }
+
+- (IBAction)pro:(UIButton*)sender {
+    NSLog(@"pro touched");
+    [[[ODIntroTutoInterfaceController alloc]init] proButton];
+}
+
+- (IBAction)client:(UIButton*)sender {
+    [[[ODIntroTutoInterfaceController alloc ]init ]clientButton];
+}
+
 
 @end

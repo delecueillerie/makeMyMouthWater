@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="hOF-b6-TGN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--RootVC - Root View Controller-->
         <scene sceneID="0c9-0U-bWn">
             <objects>
-                <tableViewController storyboardIdentifier="root" id="B1W-G5-nmJ" customClass="EDRootVC" sceneMemberID="viewController">
+                <tableViewController id="B1W-G5-nmJ" customClass="EDRootVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="peR-Pz-jfP">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,7 +369,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <!--Navigation Controller-->
         <scene sceneID="Hwz-Ua-I7S">
             <objects>
-                <navigationController definesPresentationContext="YES" id="hOF-b6-TGN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="root" definesPresentationContext="YES" id="hOF-b6-TGN" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T20-U0-ssP">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

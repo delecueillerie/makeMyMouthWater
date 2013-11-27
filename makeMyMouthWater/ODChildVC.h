@@ -10,7 +10,8 @@
 
 @interface ODChildVC : UIViewController
 
-@property (nonatomic, strong) UIImage *imageToDisplay;
+@property (nonatomic, strong) UIImage *portraitImage;
+@property (nonatomic, strong) UIImage *landscapeImage;
 @property (assign, nonatomic) NSInteger index;
 @property (nonatomic, strong) NSString *labelToDisplay;
 @property (nonatomic, strong) NSString *textToDisplay;

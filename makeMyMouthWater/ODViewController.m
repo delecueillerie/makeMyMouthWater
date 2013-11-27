@@ -32,25 +32,25 @@
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
     [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-
     [self addChildViewController:self.pageController];
     [[self view] addSubview:[self.pageController view]];
     [self.pageController didMoveToParentViewController:self];
 }
 
-
-
 ///////////////////////////////////////////////////////////////////////////
 //PAGE CREATION
 ///////////////////////////////////////////////////////////////////////////
 - (ODChildVC *)viewControllerAtIndex:(NSUInteger)index {
-    
-    ODChildVC *childViewController = [[ODChildVC alloc] initWithNibName:@"ODChildView" bundle:nil];
+
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"introTuto" bundle:nil];
+    ODChildVC *childViewController = [storyboard instantiateViewControllerWithIdentifier:@"child"];
+
     childViewController.index = index;
     NSArray *array = [self pageContent:index];
-    childViewController.imageToDisplay = array[0];
-    childViewController.labelToDisplay = array[1];
-    childViewController.textToDisplay = array[2];
+    childViewController.portraitImage = array[0];
+    childViewController.landscapeImage = array[1];
+    childViewController.labelToDisplay = array[2];
+    childViewController.textToDisplay = array[3];
     return childViewController;
     
 }
@@ -88,20 +88,6 @@
     
 }
 
-///////////////////////////////////////////////////////////////////////////
-//PAGE CONTROL DELEGATE & UI POSITION
-///////////////////////////////////////////////////////////////////////////
-/*
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    // The number of items reflected in the page indicator.
-    return 4;
-}
-
-- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    // The selected item reflected in the page indicator.
-    return 0;
-}
-*/
 
 ///////////////////////////////////////////////////////////////////////////
 //DATA MANAGEMENT
@@ -109,36 +95,49 @@
 ///////////////////////////////////////////////////////////////////////////
 
 - (NSArray *) pageContent :(NSInteger)index {
-    
-    UIImage *image1 = [UIImage imageNamed:@"cuisine.jpg"];
-    UIImage *image2 = [UIImage imageNamed:@"bar.jpg"];
-    UIImage *image3 = [UIImage imageNamed:@"bouteille.jpg"];
-    UIImage *image4 = [UIImage imageNamed:@"table.jpg"];
 
-    NSString *label1 = @"Découvrez les propositions du chef";
-    NSString *label2 = @"Découvrez la carte du barman";
-    NSString *label3 = @"Facilitez votre choix";
-    NSString *label4 = @"Plus présent et tellement moins oppressant";
-    
-    NSString *text1 = @"Selon le marché et les choix du chef la carte du restaurant est toujours à jour et les prix actualisés au quotidien. Si la météo n'est pas de la partie ou que des réservations sont annulées en dernière minute, le patron saura faire des offres flash pour ne pas gacher des plats mijotés qui n'attendent que vous";
-    NSString *text2 = @"Cocktail sophistiqué, Champagne ou pression bien fraiche, cette carte vous devoilera toute la cave en un clin d'oeil, et surtout ne vous déplacez plus pour commander";
-    NSString *text3 = @"Vieux Rhum de Cuba ou Whisky de Ballycoolin aprenez toutes les caractéristique de votre elixir pour une dégustation reussie";
-    NSString *text4 = @"Profitez de votre partenaire, de vos amis et redecouvrez le plaisir d'être servi. Ne cherchez plus le regard du serveur vous pouvez maintenant communiquer avec lui par télépathie. Et si vous n'avez pas reservé vous savez immédiatement où une table est libre pour vous accueillir";
+    UIImage *landscape0 = [UIImage imageNamed:@"coverLandscape.png"];
+    UIImage *landscape1 = [UIImage imageNamed:@"barLandscape.png"];
+    UIImage *landscape2 = [UIImage imageNamed:@"bottleLandscape.png"];
+    UIImage *landscape3 = [UIImage imageNamed:@"tableLandscape.png"];
+    UIImage *landscape4 = [UIImage imageNamed:@"cuisineLandscape.png"];
+
+    UIImage *portrait0 = [UIImage imageNamed:@"coverPortrait.png"];
+    UIImage *portrait1 = [UIImage imageNamed:@"barPortrait.png"];
+    UIImage *portrait2 = [UIImage imageNamed:@"bottlePortrait.png"];
+    UIImage *portrait3 = [UIImage imageNamed:@"tablePortrait.png"];
+    UIImage *portrait4 = [UIImage imageNamed:@"cuisinePortrait.png"];
+
+    NSString *label0 = NSLocalizedString(@"label0", nil);
+    NSString *label1 = NSLocalizedString(@"label1", nil);
+    NSString *label2 = NSLocalizedString(@"label2", nil);
+    NSString *label3 = NSLocalizedString(@"label3", nil);
+    NSString *label4 = NSLocalizedString(@"label4", nil);
+
+    NSString *text0 = NSLocalizedString(@"text0", nil);
+    NSString *text1 = NSLocalizedString(@"text1", nil);
+    NSString *text2 = NSLocalizedString(@"text2", nil);
+    NSString *text3 = NSLocalizedString(@"text3", nil);
+    NSString *text4 = NSLocalizedString(@"text4", nil);
+
     
     NSArray *array;
     
     switch (index) {
         case 0:
-            array = [NSArray arrayWithObjects:image1,label1,text1,nil];
+            array = [NSArray arrayWithObjects:portrait0, landscape0,label0,text0,nil];
             break;
         case 1:
-            array = [NSArray arrayWithObjects:image2,label2,text2,nil];
+            array = [NSArray arrayWithObjects:portrait1, landscape1,label1,text1,nil];
             break;
         case 2:
-            array = [NSArray arrayWithObjects:image3,label3,text3,nil];
+            array = [NSArray arrayWithObjects:portrait2, landscape2,label2,text2,nil];
+            break;
+        case 3:
+            array = [NSArray arrayWithObjects:portrait3, landscape3,label3,text3,nil];
             break;
         default:
-            array = [NSArray arrayWithObjects:image4,label4,text4,nil];
+            array = [NSArray arrayWithObjects:portrait4, landscape4,label4,text4,nil];
             break;
     }
     return array;

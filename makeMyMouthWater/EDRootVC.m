@@ -8,15 +8,25 @@
 
 #import "EDRootVC.h"
 #import "Drink.h"
+#import "DBCoreDataStack.h"
 
 @interface EDRootVC ()
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
+@property (nonatomic, strong) DBCoreDataStack *coreDataStack;
 
 @end
 
 @implementation EDRootVC
+
+////////////////////////////////////////////////////////////////////////
+//LAZY INSTANCIATION
+////////////////////////////////////////////////////////////////////////
+- (DBCoreDataStack*) coreDataStack {
+    if (!_coreDataStack) _coreDataStack = [[DBCoreDataStack alloc]init];
+    return _coreDataStack;
+}
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -25,7 +35,9 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
+
+    self.managedObjectContext = self.coreDataStack.managedObjectContext;
+
     // Set up the edit and add buttons.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
@@ -46,8 +58,22 @@
     [self.tableView reloadData];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"SDSyncEngineSyncCompleted" object:nil queue:nil usingBlock:^(NSNotification *note) {
+        [self loadRecordsFromCoreData];
+        [self.tableView reloadData];
+    }];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"SDSyncEngineSyncCompleted" object:nil];
+}
 
 - (void)viewDidUnload {
+    [self.coreDataStack saveContext];
     // Release any properties that are loaded in viewDidLoad or can be recreated lazily.
     self.fetchedResultsController = nil;
 }
@@ -56,6 +82,18 @@
 ////////////////////////////////////////////////////////////////////////
 //TABLE VIEW DATA SOURCE
 ////////////////////////////////////////////////////////////////////////
+
+//loadRecorsFromCoreData is used to reload data from Core Data when synchronization process changes the data
+- (void)loadRecordsFromCoreData {
+    [self.managedObjectContext performBlockAndWait:^{
+        [self.managedObjectContext reset];
+        [self fetchedResultsController];
+    }];
+}
+
+
+
+
 /*
  The data source methods are handled primarily by the fetch results controller
  */
@@ -150,6 +188,8 @@
 ////////////////////////////////////////////////////////////////////////
 //FETCH RESULT CONTROLLER
 ////////////////////////////////////////////////////////////////////////
+
+
 /*
  Returns the fetched results controller. Creates and configures the controller if necessary.
  */
@@ -159,21 +199,22 @@
         return _fetchedResultsController;
     }
     
-    // Create and configure a fetch request with the Book entity.
+    // Create and configure a fetch request with the Drink entity.
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Drink" inManagedObjectContext:self.managedObjectContext];
+    
     [fetchRequest setEntity:entity];
     
     // Create the sort descriptors array.
     NSSortDescriptor *authorDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-    NSSortDescriptor *titleDescriptor = [[NSSortDescriptor alloc] initWithKey:@"brand" ascending:YES];
-    NSArray *sortDescriptors = @[authorDescriptor, titleDescriptor];
+    //NSSortDescriptor *titleDescriptor = [[NSSortDescriptor alloc] initWithKey:@"brand" ascending:YES];
+    NSArray *sortDescriptors = @[authorDescriptor];
     [fetchRequest setSortDescriptors:sortDescriptors];
     
     // Create and initialize the fetch results controller.
-    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"brand" cacheName:nil];
+    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     _fetchedResultsController.delegate = self;
-    
+
     return _fetchedResultsController;
 }
 

@@ -8,8 +8,15 @@
 
 #import "MAAppDelegate.h"
 #import "ODViewController.h"
+#import "LOLoginVC.h"
 #import <Parse/Parse.h>
+#import <UIKit/UIKit.h>
 
+//#import "Drink.h"
+//#import "CategoryDrink.h"
+//#import "SYSyncEngine.h"
+//#import "SYHTTPClient.h"
+#warning lauch the initial set up after a login
 @interface MAAppDelegate()
 @property (strong, nonatomic) ODViewController *viewController;
 @end
@@ -22,9 +29,12 @@
     //loginParse app
     [Parse setApplicationId:@"C2XRFUHGSMgrAK1Cd3qa1DQkgDiqR4f0T2bMlu5l"
                   clientKey:@"j5niQANFTgraWoRj1GMXsyOHpXehcZgFSMOUoxbP"];
-    
+
+ //   [[SYSyncEngine sharedEngine] registerNSManagedObjectClassToSync:[Drink class]];
     //introTuto app
-    [self introTutoInit];
+#warning to de-comment
+    //[self introTutoInit];
+    [self launchTheGoodUI];
     return YES;
 }
 							
@@ -48,6 +58,9 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+#warning todelete
+    // [[SYSyncEngine sharedEngine] startSync];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -56,14 +69,45 @@
 }
 
 ////////////////////////////////////////////////////////////////
-//introTuto app
+//Choose wich storyboard to launch
 ////////////////////////////////////////////////////////////////
+- (void) launchTheGoodUI {
+#define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
 
-- (void) introTutoInit {
-// Override point for customization after application launch.
-self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-self.viewController = [[ODViewController alloc] initWithNibName:@"ODViewController" bundle:nil];
-self.window.rootViewController = self.viewController;
-[self.window makeKeyAndVisible];
+
+    NSInteger index = [[NSUserDefaults standardUserDefaults] integerForKey:@"nextLaunchKey"];
+    UIViewController *VC;
+    VC = [[UIStoryboard storyboardWithName:[self goodStoryboardAndIdentifier:index][0] bundle:NULL] instantiateViewControllerWithIdentifier:[self goodStoryboardAndIdentifier:index][1]];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = VC;
+    [self.window makeKeyAndVisible];
 }
+
+- (NSArray *) goodStoryboardAndIdentifier:(NSInteger)module {
+        switch (module) {
+
+            case 0:
+                //First launch of the app (new instal, update ...). We want to give an idea of the goal of the app, thus we launch the introTuto part
+                return [NSArray arrayWithObjects:[self goodExtensionForStoryboard:@"introTuto"],@"main",nil];
+                break;
+            case 1:
+                // After a delog, or when no user is login
+                return [NSArray arrayWithObjects:[self goodExtensionForStoryboard:@"login"], @"register",nil];
+                break;
+            case 2:
+                //First launch of the app (new instal, update ...). We want to give an idea of the goal of the app, thus we launch the introTuto part
+                return [NSArray arrayWithObjects:[self goodExtensionForStoryboard:@"editionTableView"], @"EDRootVC",nil];
+                break;
+            default:
+                return [NSArray arrayWithObjects:[self goodExtensionForStoryboard:@"introTuto"],@"child",nil];
+                break;
+        }
+}
+- (NSString *) goodExtensionForStoryboard:(NSString*) storyboard {
+    NSMutableString * mutableStoryboard = [NSMutableString stringWithString:storyboard];
+    if (IPAD) [mutableStoryboard appendString:@"_iPad"];
+    else [mutableStoryboard appendString:@"_iPhone"];
+    return (NSString *)mutableStoryboard;
+}
+
 @end
