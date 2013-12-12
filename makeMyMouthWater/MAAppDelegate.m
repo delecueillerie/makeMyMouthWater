@@ -12,10 +12,7 @@
 #import <Parse/Parse.h>
 #import <UIKit/UIKit.h>
 
-//#import "Drink.h"
-//#import "CategoryDrink.h"
-//#import "SYSyncEngine.h"
-//#import "SYHTTPClient.h"
+
 #warning lauch the initial set up after a login
 @interface MAAppDelegate()
 @property (strong, nonatomic) ODViewController *viewController;
@@ -77,7 +74,8 @@
 
     NSInteger index = [[NSUserDefaults standardUserDefaults] integerForKey:@"nextLaunchKey"];
     UIViewController *VC;
-    VC = [[UIStoryboard storyboardWithName:[self goodStoryboardAndIdentifier:index][0] bundle:NULL] instantiateViewControllerWithIdentifier:[self goodStoryboardAndIdentifier:index][1]];
+    //VC = [[UIStoryboard storyboardWithName:[self goodStoryboardAndIdentifier:index][0] bundle:NULL] instantiateViewControllerWithIdentifier:[self goodStoryboardAndIdentifier:index][1]];
+    VC = [[UIStoryboard storyboardWithName:@"AD_iPad" bundle:NULL] instantiateViewControllerWithIdentifier:@"SVC"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = VC;
     [self.window makeKeyAndVisible];

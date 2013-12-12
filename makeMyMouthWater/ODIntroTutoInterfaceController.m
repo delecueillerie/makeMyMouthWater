@@ -20,12 +20,13 @@
 #define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
 
 - (void) proButton {
- 
+
+
     UIViewController *VC;
-    VC = [[UIStoryboard storyboardWithName:[self goodExtensionForStoryboard:@"login"] bundle:nil] instantiateViewControllerWithIdentifier:@"register"];
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = VC;
-    [self.window makeKeyAndVisible];
+    VC = [[UIStoryboard storyboardWithName:[self goodExtensionForStoryboard:@"login"] bundle:nil] instantiateViewControllerWithIdentifier:@"navLogin"];
+    [self.currentVC presentViewController:VC animated:YES completion:^{
+        NSLog(@"present login VC ok");
+    } ];
 }
 
 

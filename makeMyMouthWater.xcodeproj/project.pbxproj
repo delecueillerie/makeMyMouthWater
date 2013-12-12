@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091EA47B1857D49A00827640 /* ADEditionDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EA46E1857D49A00827640 /* ADEditionDetailVC.m */; };
+		091EA47C1857D49A00827640 /* ADEditionEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EA4701857D49A00827640 /* ADEditionEditVC.m */; };
+		091EA47D1857D49A00827640 /* ADEditionRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EA4721857D49A00827640 /* ADEditionRootVC.m */; };
+		091EA47E1857D49A00827640 /* ADIdentityTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EA4731857D49A00827640 /* ADIdentityTVC.m */; };
+		091EA47F1857D49A00827640 /* ADMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EA4741857D49A00827640 /* ADMasterViewController.m */; };
+		091EA4801857D49A00827640 /* ADDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EA4761857D49A00827640 /* ADDetailViewController.m */; };
+		091EA4811857D49A00827640 /* ADPhotoCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EA47A1857D49A00827640 /* ADPhotoCollectionVC.m */; };
+		091EA48718587CBB00827640 /* AD_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091EA48518587CBB00827640 /* AD_iPad.storyboard */; };
+		091EA48D18591A2200827640 /* Identity.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EA48C18591A2200827640 /* Identity.m */; };
 		093A0D6718304D1C00093ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6618304D1C00093ABD /* Foundation.framework */; };
 		093A0D6918304D1C00093ABD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6818304D1C00093ABD /* CoreGraphics.framework */; };
 		093A0D6B18304D1C00093ABD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093A0D6A18304D1C00093ABD /* UIKit.framework */; };
@@ -49,6 +58,7 @@
 		093A59EB183240FB00CA1640 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A59E4183240FB00CA1640 /* UIWebView+AFNetworking.m */; };
 		093A59FA1833B20900CA1640 /* SYSyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A59F91833B20900CA1640 /* SYSyncEngine.m */; };
 		093A59FD1833D30600CA1640 /* SYCoreDataStackWithSyncStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 093A59FC1833D30600CA1640 /* SYCoreDataStackWithSyncStuff.m */; };
+		093C4A181845FDBF00858D93 /* LOInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C4A171845FDBF00858D93 /* LOInterfaceController.m */; };
 		093D98271844B25200C8070C /* barLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 093D98191844B25200C8070C /* barLandscape.png */; };
 		093D98281844B25200C8070C /* barPortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 093D981A1844B25200C8070C /* barPortrait.png */; };
 		093D98291844B25200C8070C /* bottleLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 093D981B1844B25200C8070C /* bottleLandscape.png */; };
@@ -61,9 +71,8 @@
 		093D98301844B25200C8070C /* tablePortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 093D98221844B25200C8070C /* tablePortrait.png */; };
 		093D98311844B25200C8070C /* ODChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 093D98251844B25200C8070C /* ODChildVC.m */; };
 		093D98321844B25200C8070C /* ODViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093D98261844B25200C8070C /* ODViewController.m */; };
-		093D983C1844E05600C8070C /* introTuto_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093D983B1844E05600C8070C /* introTuto_iPad.storyboard */; };
-		093D98411844E80C00C8070C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093D98431844E80C00C8070C /* Localizable.strings */; };
 		093D985318455D5F00C8070C /* ODIntroTutoInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093D985218455D5F00C8070C /* ODIntroTutoInterfaceController.m */; };
+		097046ED1845799600072098 /* introTuto_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097046EB1845799600072098 /* introTuto_iPad.storyboard */; };
 		097CFFA118368F6900F5FAFF /* SYHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 097CFFA018368F6900F5FAFF /* SYHTTPClient.m */; };
 		0985BCEB1831972800424307 /* EDDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985BCE21831972800424307 /* EDDetailVC.m */; };
 		0985BCEC1831972800424307 /* EDEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985BCE31831972800424307 /* EDEditVC.m */; };
@@ -71,7 +80,6 @@
 		0985BCF41831975600424307 /* DBCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985BCF11831975600424307 /* DBCoreDataStack.m */; };
 		0985BCF51831975600424307 /* menuCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0985BCF21831975600424307 /* menuCoreDataModel.xcdatamodeld */; };
 		0985BCF71831979F00424307 /* EDRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985BCF61831979F00424307 /* EDRootVC.m */; };
-		0985BCFA1831981A00424307 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985BCF91831981A00424307 /* Meal.m */; };
 		0985BCFD1831981B00424307 /* SquareMenuAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985BCFC1831981B00424307 /* SquareMenuAd.m */; };
 		0985BD001831981B00424307 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985BCFF1831981B00424307 /* Drink.m */; };
 		0985BD031831981B00424307 /* CategoryDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0985BD021831981B00424307 /* CategoryDrink.m */; };
@@ -92,6 +100,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091EA46D1857D49A00827640 /* ADEditionDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADEditionDetailVC.h; path = ../../AdministrationInterface/AdministrationInterface/ADEditionDetailVC.h; sourceTree = "<group>"; };
+		091EA46E1857D49A00827640 /* ADEditionDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADEditionDetailVC.m; path = ../../AdministrationInterface/AdministrationInterface/ADEditionDetailVC.m; sourceTree = "<group>"; };
+		091EA46F1857D49A00827640 /* ADEditionEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADEditionEditVC.h; path = ../../AdministrationInterface/AdministrationInterface/ADEditionEditVC.h; sourceTree = "<group>"; };
+		091EA4701857D49A00827640 /* ADEditionEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADEditionEditVC.m; path = ../../AdministrationInterface/AdministrationInterface/ADEditionEditVC.m; sourceTree = "<group>"; };
+		091EA4711857D49A00827640 /* ADEditionRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADEditionRootVC.h; path = ../../AdministrationInterface/AdministrationInterface/ADEditionRootVC.h; sourceTree = "<group>"; };
+		091EA4721857D49A00827640 /* ADEditionRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADEditionRootVC.m; path = ../../AdministrationInterface/AdministrationInterface/ADEditionRootVC.m; sourceTree = "<group>"; };
+		091EA4731857D49A00827640 /* ADIdentityTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADIdentityTVC.m; path = ../../AdministrationInterface/AdministrationInterface/ADIdentityTVC.m; sourceTree = "<group>"; };
+		091EA4741857D49A00827640 /* ADMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADMasterViewController.m; path = ../../AdministrationInterface/AdministrationInterface/ADMasterViewController.m; sourceTree = "<group>"; };
+		091EA4751857D49A00827640 /* ADDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADDetailViewController.h; path = ../../AdministrationInterface/AdministrationInterface/ADDetailViewController.h; sourceTree = "<group>"; };
+		091EA4761857D49A00827640 /* ADDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADDetailViewController.m; path = ../../AdministrationInterface/AdministrationInterface/ADDetailViewController.m; sourceTree = "<group>"; };
+		091EA4771857D49A00827640 /* ADIdentityTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADIdentityTVC.h; path = ../../AdministrationInterface/AdministrationInterface/ADIdentityTVC.h; sourceTree = "<group>"; };
+		091EA4781857D49A00827640 /* ADMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADMasterViewController.h; path = ../../AdministrationInterface/AdministrationInterface/ADMasterViewController.h; sourceTree = "<group>"; };
+		091EA4791857D49A00827640 /* ADPhotoCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADPhotoCollectionVC.h; path = ../../AdministrationInterface/AdministrationInterface/ADPhotoCollectionVC.h; sourceTree = "<group>"; };
+		091EA47A1857D49A00827640 /* ADPhotoCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADPhotoCollectionVC.m; path = ../../AdministrationInterface/AdministrationInterface/ADPhotoCollectionVC.m; sourceTree = "<group>"; };
+		091EA48618587CBB00827640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../AdministrationInterface/AdministrationInterface/Base.lproj/AD_iPad.storyboard; sourceTree = "<group>"; };
+		091EA48B18591A2200827640 /* Identity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identity.h; sourceTree = "<group>"; };
+		091EA48C18591A2200827640 /* Identity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Identity.m; sourceTree = "<group>"; };
 		093A0D6318304D1C00093ABD /* makeMyMouthWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makeMyMouthWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		093A0D6618304D1C00093ABD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		093A0D6818304D1C00093ABD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +185,8 @@
 		093A59F91833B20900CA1640 /* SYSyncEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSyncEngine.m; sourceTree = "<group>"; };
 		093A59FB1833D30600CA1640 /* SYCoreDataStackWithSyncStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYCoreDataStackWithSyncStuff.h; sourceTree = "<group>"; };
 		093A59FC1833D30600CA1640 /* SYCoreDataStackWithSyncStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYCoreDataStackWithSyncStuff.m; sourceTree = "<group>"; };
+		093C4A161845FDBF00858D93 /* LOInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOInterfaceController.h; sourceTree = "<group>"; };
+		093C4A171845FDBF00858D93 /* LOInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOInterfaceController.m; sourceTree = "<group>"; };
 		093D98191844B25200C8070C /* barLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barLandscape.png; sourceTree = "<group>"; };
 		093D981A1844B25200C8070C /* barPortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barPortrait.png; sourceTree = "<group>"; };
 		093D981B1844B25200C8070C /* bottleLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottleLandscape.png; sourceTree = "<group>"; };
@@ -174,11 +201,11 @@
 		093D98241844B25200C8070C /* ODViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODViewController.h; sourceTree = "<group>"; };
 		093D98251844B25200C8070C /* ODChildVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODChildVC.m; sourceTree = "<group>"; };
 		093D98261844B25200C8070C /* ODViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODViewController.m; sourceTree = "<group>"; };
-		093D983B1844E05600C8070C /* introTuto_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = introTuto_iPad.storyboard; sourceTree = "<group>"; };
-		093D98421844E80C00C8070C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		093D98441844E81300C8070C /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		093D98421844E80C00C8070C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		093D98441844E81300C8070C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		093D985118455D5F00C8070C /* ODIntroTutoInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODIntroTutoInterfaceController.h; sourceTree = "<group>"; };
 		093D985218455D5F00C8070C /* ODIntroTutoInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODIntroTutoInterfaceController.m; sourceTree = "<group>"; };
+		097046EC1845799600072098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/introTuto_iPad.storyboard; sourceTree = "<group>"; };
 		097CFF9F18368F6900F5FAFF /* SYHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHTTPClient.h; sourceTree = "<group>"; };
 		097CFFA018368F6900F5FAFF /* SYHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHTTPClient.m; sourceTree = "<group>"; };
 		0985BCE21831972800424307 /* EDDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDDetailVC.m; sourceTree = "<group>"; };
@@ -192,8 +219,6 @@
 		0985BCF11831975600424307 /* DBCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoreDataStack.m; sourceTree = "<group>"; };
 		0985BCF31831975600424307 /* menuCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = menuCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		0985BCF61831979F00424307 /* EDRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDRootVC.m; sourceTree = "<group>"; };
-		0985BCF81831981A00424307 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
-		0985BCF91831981A00424307 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
 		0985BCFB1831981B00424307 /* SquareMenuAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareMenuAd.h; sourceTree = "<group>"; };
 		0985BCFC1831981B00424307 /* SquareMenuAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareMenuAd.m; sourceTree = "<group>"; };
 		0985BCFE1831981B00424307 /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
@@ -299,6 +324,7 @@
 				0985BCEF1831973100424307 /* dataStack */,
 				0985BCE1183195EC00424307 /* editionTableView */,
 				093A0DB618304E8500093ABD /* loginParse */,
+				093C4AAC18460B6400858D93 /* adminInterface */,
 				093A0D9E18304D7800093ABD /* introTuto */,
 				093A0D7518304D1C00093ABD /* MAAppDelegate.h */,
 				093A0D7618304D1C00093ABD /* MAAppDelegate.m */,
@@ -354,10 +380,9 @@
 			children = (
 				0985BD0F18319D8B00424307 /* login_iPad.storyboard */,
 				0985BD1118319D8B00424307 /* login_iPhone.storyboard */,
-				093A0DB918304EA000093ABD /* LOLoginVC.h */,
-				093A0DBA18304EA000093ABD /* LOLoginVC.m */,
-				093A0DBB18304EA000093ABD /* LORegisterVC.h */,
-				093A0DBC18304EA000093ABD /* LORegisterVC.m */,
+				093C4A161845FDBF00858D93 /* LOInterfaceController.h */,
+				093C4A171845FDBF00858D93 /* LOInterfaceController.m */,
+				093C4A191845FDE300858D93 /* import */,
 			);
 			name = loginParse;
 			sourceTree = "<group>";
@@ -423,6 +448,39 @@
 			path = "makeMyMouthWater/UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		093C4A191845FDE300858D93 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				093A0DB918304EA000093ABD /* LOLoginVC.h */,
+				093A0DBA18304EA000093ABD /* LOLoginVC.m */,
+				093A0DBB18304EA000093ABD /* LORegisterVC.h */,
+				093A0DBC18304EA000093ABD /* LORegisterVC.m */,
+			);
+			name = import;
+			sourceTree = "<group>";
+		};
+		093C4AAC18460B6400858D93 /* adminInterface */ = {
+			isa = PBXGroup;
+			children = (
+				091EA48518587CBB00827640 /* AD_iPad.storyboard */,
+				091EA46D1857D49A00827640 /* ADEditionDetailVC.h */,
+				091EA46E1857D49A00827640 /* ADEditionDetailVC.m */,
+				091EA46F1857D49A00827640 /* ADEditionEditVC.h */,
+				091EA4701857D49A00827640 /* ADEditionEditVC.m */,
+				091EA4711857D49A00827640 /* ADEditionRootVC.h */,
+				091EA4721857D49A00827640 /* ADEditionRootVC.m */,
+				091EA4731857D49A00827640 /* ADIdentityTVC.m */,
+				091EA4741857D49A00827640 /* ADMasterViewController.m */,
+				091EA4751857D49A00827640 /* ADDetailViewController.h */,
+				091EA4761857D49A00827640 /* ADDetailViewController.m */,
+				091EA4771857D49A00827640 /* ADIdentityTVC.h */,
+				091EA4781857D49A00827640 /* ADMasterViewController.h */,
+				091EA4791857D49A00827640 /* ADPhotoCollectionVC.h */,
+				091EA47A1857D49A00827640 /* ADPhotoCollectionVC.m */,
+			);
+			name = adminInterface;
+			sourceTree = "<group>";
+		};
 		093D98331844B25A00C8070C /* media */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,7 +501,7 @@
 		093D985418455DE600C8070C /* import */ = {
 			isa = PBXGroup;
 			children = (
-				093D983B1844E05600C8070C /* introTuto_iPad.storyboard */,
+				097046EB1845799600072098 /* introTuto_iPad.storyboard */,
 				093D98231844B25200C8070C /* ODChildVC.h */,
 				093D98251844B25200C8070C /* ODChildVC.m */,
 				093D98241844B25200C8070C /* ODViewController.h */,
@@ -485,14 +543,14 @@
 		0985BD041831986600424307 /* NSManagedObject Subclass */ = {
 			isa = PBXGroup;
 			children = (
+				091EA48B18591A2200827640 /* Identity.h */,
+				091EA48C18591A2200827640 /* Identity.m */,
 				0985BD011831981B00424307 /* CategoryDrink.h */,
 				0985BD021831981B00424307 /* CategoryDrink.m */,
 				0985BCFE1831981B00424307 /* Drink.h */,
 				0985BCFF1831981B00424307 /* Drink.m */,
 				0985BCFB1831981B00424307 /* SquareMenuAd.h */,
 				0985BCFC1831981B00424307 /* SquareMenuAd.m */,
-				0985BCF81831981A00424307 /* Meal.h */,
-				0985BCF91831981A00424307 /* Meal.m */,
 			);
 			name = "NSManagedObject Subclass";
 			sourceTree = "<group>";
@@ -576,6 +634,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				093D982A1844B25200C8070C /* bottlePortrait.png in Resources */,
+				091EA48718587CBB00827640 /* AD_iPad.storyboard in Resources */,
 				093D98301844B25200C8070C /* tablePortrait.png in Resources */,
 				093D982D1844B25200C8070C /* cuisineLandscape.png in Resources */,
 				0985BD361831AE5400424307 /* editionTableView_iPhone.storyboard in Resources */,
@@ -585,10 +644,9 @@
 				0985BD1418319D8B00424307 /* login_iPhone.storyboard in Resources */,
 				093D98281844B25200C8070C /* barPortrait.png in Resources */,
 				093D98291844B25200C8070C /* bottleLandscape.png in Resources */,
+				097046ED1845799600072098 /* introTuto_iPad.storyboard in Resources */,
 				093A0D8218304D1C00093ABD /* Images.xcassets in Resources */,
 				093D982C1844B25200C8070C /* coverPortrait.png in Resources */,
-				093D983C1844E05600C8070C /* introTuto_iPad.storyboard in Resources */,
-				093D98411844E80C00C8070C /* Localizable.strings in Resources */,
 				093A0D7118304D1C00093ABD /* InfoPlist.strings in Resources */,
 				093D982B1844B25200C8070C /* coverLandscape.png in Resources */,
 				0985BD1318319D8B00424307 /* login_iPad.storyboard in Resources */,
@@ -616,29 +674,36 @@
 				093A59CC183240DB00CA1640 /* AFHTTPRequestOperation.m in Sources */,
 				093A0D7718304D1C00093ABD /* MAAppDelegate.m in Sources */,
 				0985BCED1831972800424307 /* EDAddVC.m in Sources */,
+				091EA47B1857D49A00827640 /* ADEditionDetailVC.m in Sources */,
 				093A59EB183240FB00CA1640 /* UIWebView+AFNetworking.m in Sources */,
 				0985BCF41831975600424307 /* DBCoreDataStack.m in Sources */,
 				097CFFA118368F6900F5FAFF /* SYHTTPClient.m in Sources */,
 				0985BCFD1831981B00424307 /* SquareMenuAd.m in Sources */,
 				093A59E6183240FB00CA1640 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				091EA47F1857D49A00827640 /* ADMasterViewController.m in Sources */,
+				093C4A181845FDBF00858D93 /* LOInterfaceController.m in Sources */,
 				093A59FD1833D30600CA1640 /* SYCoreDataStackWithSyncStuff.m in Sources */,
 				093D985318455D5F00C8070C /* ODIntroTutoInterfaceController.m in Sources */,
 				0985BCEC1831972800424307 /* EDEditVC.m in Sources */,
 				093A59CE183240DB00CA1640 /* AFHTTPSessionManager.m in Sources */,
+				091EA48D18591A2200827640 /* Identity.m in Sources */,
 				093A59FA1833B20900CA1640 /* SYSyncEngine.m in Sources */,
 				093A59E5183240FB00CA1640 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				091EA47D1857D49A00827640 /* ADEditionRootVC.m in Sources */,
+				091EA4801857D49A00827640 /* ADDetailViewController.m in Sources */,
 				0985BCF51831975600424307 /* menuCoreDataModel.xcdatamodeld in Sources */,
 				093A59E7183240FB00CA1640 /* UIAlertView+AFNetworking.m in Sources */,
 				093A0DBF18304EA000093ABD /* LORegisterVC.m in Sources */,
+				091EA4811857D49A00827640 /* ADPhotoCollectionVC.m in Sources */,
 				093A59CF183240DB00CA1640 /* AFNetworkReachabilityManager.m in Sources */,
 				093A59D4183240DB00CA1640 /* AFURLSessionManager.m in Sources */,
 				093A0DBE18304EA000093ABD /* LOLoginVC.m in Sources */,
 				0985BCF71831979F00424307 /* EDRootVC.m in Sources */,
+				091EA47C1857D49A00827640 /* ADEditionEditVC.m in Sources */,
 				093D98321844B25200C8070C /* ODViewController.m in Sources */,
 				093A59D1183240DB00CA1640 /* AFURLConnectionOperation.m in Sources */,
 				093D98311844B25200C8070C /* ODChildVC.m in Sources */,
 				093A59D3183240DB00CA1640 /* AFURLResponseSerialization.m in Sources */,
-				0985BCFA1831981A00424307 /* Meal.m in Sources */,
 				093A59D2183240DB00CA1640 /* AFURLRequestSerialization.m in Sources */,
 				0985BCEB1831972800424307 /* EDDetailVC.m in Sources */,
 				093A0D7318304D1C00093ABD /* main.m in Sources */,
@@ -647,6 +712,7 @@
 				093A59E8183240FB00CA1640 /* UIButton+AFNetworking.m in Sources */,
 				093A59CD183240DB00CA1640 /* AFHTTPRequestOperationManager.m in Sources */,
 				093A59D0183240DB00CA1640 /* AFSecurityPolicy.m in Sources */,
+				091EA47E1857D49A00827640 /* ADIdentityTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +735,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		091EA48518587CBB00827640 /* AD_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				091EA48618587CBB00827640 /* Base */,
+			);
+			name = AD_iPad.storyboard;
+			sourceTree = "<group>";
+		};
 		093A0D6F18304D1C00093ABD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -694,6 +768,14 @@
 				093D98441844E81300C8070C /* fr */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		097046EB1845799600072098 /* introTuto_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				097046EC1845799600072098 /* Base */,
+			);
+			name = introTuto_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		0985BD0F18319D8B00424307 /* login_iPad.storyboard */ = {

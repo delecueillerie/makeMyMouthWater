@@ -10,6 +10,8 @@
 
 @interface ODIntroTutoInterfaceController : NSObject
 
+@property (strong, nonatomic) UIViewController *currentVC;
 - (void) proButton;
 - (void) clientButton;
+
 @end

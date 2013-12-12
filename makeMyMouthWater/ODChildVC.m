@@ -53,7 +53,9 @@
 
 - (IBAction)pro:(UIButton*)sender {
     NSLog(@"pro touched");
-    [[[ODIntroTutoInterfaceController alloc]init] proButton];
+    ODIntroTutoInterfaceController *interfaceVC = [[ODIntroTutoInterfaceController alloc]init];
+    interfaceVC.currentVC = self;
+    [interfaceVC proButton];
 }
 
 - (IBAction)client:(UIButton*)sender {

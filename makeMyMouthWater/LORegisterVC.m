@@ -9,6 +9,7 @@
 #import "LORegisterVC.h"
 #import <Parse/Parse.h>
 #import "EDRootVC.h"
+#import "LOInterfaceController.h"
 
 @interface LORegisterVC ()
 
@@ -62,12 +63,8 @@
     
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
-
-            //The registration was succesful, go to the wall
-            //[self performSegueWithIdentifier:@"SignupSuccesful" sender:self];
-            [self openTheNextVC:[[EDRootVC alloc]init] withIPadStoryboard:@"editionTableView_iPad" withIPhoneStoryboard:@"editionTableView_iPhone" inBundle:nil witViewIdentifier:@"root"];
-            
-        } else {
+            [self postLoginAction];
+                   } else {
             //Something bad has ocurred
             NSString *errorString = [[error userInfo] objectForKey:@"error"];
             UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
@@ -78,16 +75,22 @@
     
 }
 
+- (void) postLoginAction {
 
-- (void) openTheNextVC:(UIViewController*)VC withIPadStoryboard:(NSString*)ipadStory withIPhoneStoryboard:(NSString*)iphoneStory inBundle:(NSBundle*)bundle witViewIdentifier:(NSString *)id {
-#define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
-    if (IPAD) {
-        VC = [[UIStoryboard storyboardWithName:ipadStory bundle:bundle] instantiateViewControllerWithIdentifier:id];
-    } else {
-        VC = [[UIStoryboard storyboardWithName:iphoneStory bundle:bundle] instantiateViewControllerWithIdentifier:id];
-    }
-    [self presentViewController:VC animated:YES completion:nil];
-    
+    //No synchronization yet because it is a fresh new user
+#warning demo database could be useful
+
+
+    //The registration was succesful, go to the next slide
+    LOInterfaceController *interface = [[LOInterfaceController alloc]init];
+    interface.currentVC = self;
+    [interface openTheNextVC:[[EDRootVC alloc]init] withIPadStoryboard:@"editionTableView_iPad" withIPhoneStoryboard:@"editionTableView_iPhone" inBundle:nil witViewIdentifier:@"root"];
+
+
+
 }
+
+
+
 
 @end

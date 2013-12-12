@@ -42,7 +42,8 @@
 ///////////////////////////////////////////////////////////////////////////
 - (ODChildVC *)viewControllerAtIndex:(NSUInteger)index {
 
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"introTuto" bundle:nil];
+#warning update the name of thi generic Storyboard (delete _iPad)
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"introTuto_iPad" bundle:nil];
     ODChildVC *childViewController = [storyboard instantiateViewControllerWithIdentifier:@"child"];
 
     childViewController.index = index;
