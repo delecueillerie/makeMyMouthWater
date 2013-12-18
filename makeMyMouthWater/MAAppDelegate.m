@@ -24,8 +24,8 @@
 {
     // Override point for customization after application launch.
     //loginParse app
-    [Parse setApplicationId:@"C2XRFUHGSMgrAK1Cd3qa1DQkgDiqR4f0T2bMlu5l"
-                  clientKey:@"j5niQANFTgraWoRj1GMXsyOHpXehcZgFSMOUoxbP"];
+    [Parse setApplicationId:@""
+                  clientKey:@""];
 
  //   [[SYSyncEngine sharedEngine] registerNSManagedObjectClassToSync:[Drink class]];
     //introTuto app
